@@ -13,7 +13,7 @@ export class User {
   @Column({ nullable: true })
   email: string;
 
-  @Column()
+  @Column({ default: 'KukuBend99% '})
   password: string;
 
   @ManyToMany(() => Department, department => department.users)

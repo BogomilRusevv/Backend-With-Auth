@@ -23,6 +23,7 @@ import {
       return this.authService.signIn(signInDto.email, signInDto.password);
     }
 
+    @Public()
     @HttpCode(HttpStatus.OK)
     @Post('register')
     register(
